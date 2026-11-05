@@ -15,5 +15,10 @@ Les copies installées lisent
 `https://github.com/baptisteftr/pChat-releases/releases/latest/download/appcast.xml` : c'est
 donc toujours la **dernière** release publiée qui fait foi. Ne pas la marquer « pre-release ».
 
-Captures : les mettre dans `images/` et les référencer dans le `README.md`. **Vérifier qu'aucun
-message, nom ou channel réel n'y apparaît** : ce dépôt est public.
+Captures : elles viennent du **mode démo** de pChat (équipe et conversations fictives, réglages
+par défaut), jamais d'une vraie session — ce dépôt est public. Depuis le dépôt privé :
+
+    xcodebuild -scheme pChat -configuration Debug -derivedDataPath build/DerivedData build
+    swift Scripts/demo-shots.swift build/DerivedData/Build/Products/Debug/pChat.app ../pChat-releases/images
+
+Le script produit `chat.png`, `thread.png` et `settings.png`, déjà référencées par le `README.md`.

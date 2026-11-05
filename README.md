@@ -8,7 +8,7 @@ pChat remplace l'app web de kChat par une vraie app Mac : écrite en Swift et Sw
 en temps réel à votre instance kChat, elle reste légère, se pilote au clavier et suit l'apparence
 du système.
 
-<!-- Captures : images/*.png, voir RELEASING.md -->
+![pChat](images/chat.png)
 
 ## Télécharger
 
@@ -47,6 +47,18 @@ pChat est en développement actif ; son code source n'est pas publié.
 - **Notifications** macOS par channel, avec aperçu masquable.
 - **Thèmes** clairs et sombres, éditeur de thème personnalisé.
 - **Verrouillage** par Touch ID après une absence.
+
+## En images
+
+Les fils de discussion s'ouvrent à côté du channel :
+
+![Un fil de discussion](images/thread.png)
+
+Des thèmes clairs et sombres, et un éditeur pour créer le vôtre :
+
+![Les réglages d'apparence](images/settings.png)
+
+*Captures réalisées avec le mode démo de pChat : l'équipe et les conversations sont fictives.*
 
 ## Retours
 
