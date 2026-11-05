@@ -5,7 +5,8 @@ privé `baptisteftr/pChat`), seulement la présentation, les builds et le flux S
 
 Tout passe par `release.sh`, à la racine du dépôt privé :
 
-1. écrire `release-notes/<version>.md` (ce qui a changé, en français) ;
+1. écrire `release-notes/<version>.md` et le commiter : ce qui change pour l'utilisateur, en
+   français puis en anglais sous un `---` (modèle : `release-notes/1.0.md`) ;
 2. `./release.sh 1.1` (ou `./release.sh` pour ne monter que le build) : archive, signature
    Developer ID, notarisation, `.dmg`, puis release `v<version>` ici avec le `.dmg`, le `.zip`
    et l'`appcast.xml` ;
